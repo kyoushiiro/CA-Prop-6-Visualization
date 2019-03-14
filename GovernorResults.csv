@@ -1,119 +1,119 @@
-COUNTY_ID,COUNTY_NAME,CONTEST_NAME,CANDIDATE_NAME,PARTY_ID,PARTY_NAME,VOTE_TOTAL,D_PERCENT
-1,Alameda,Governor,John H. Cox,3,Republican,"111,677",19.40%
-1,Alameda,Governor,Gavin Newsom,1,Democratic,"462,558",80.60%
-2,Alpine,Governor,John H. Cox,3,Republican,229,37.20%
-2,Alpine,Governor,Gavin Newsom,1,Democratic,386,62.80%
-3,Amador,Governor,John H. Cox,3,Republican,"11,356",64.50%
-3,Amador,Governor,Gavin Newsom,1,Democratic,"6,237",35.50%
-4,Butte,Governor,John H. Cox,3,Republican,"47,226",53.20%
-4,Butte,Governor,Gavin Newsom,1,Democratic,"41,500",46.80%
-5,Calaveras,Governor,John H. Cox,3,Republican,"13,845",64.10%
-5,Calaveras,Governor,Gavin Newsom,1,Democratic,"7,765",35.90%
-6,Colusa,Governor,John H. Cox,3,Republican,"3,764",65.30%
-6,Colusa,Governor,Gavin Newsom,1,Democratic,"1,999",34.70%
-7,Contra Costa,Governor,John H. Cox,3,Republican,"132,345",31.80%
-7,Contra Costa,Governor,Gavin Newsom,1,Democratic,"283,805",68.20%
-8,Del Norte,Governor,John H. Cox,3,Republican,"4,887",58.70%
-8,Del Norte,Governor,Gavin Newsom,1,Democratic,"3,441",41.30%
-9,El Dorado,Governor,John H. Cox,3,Republican,"53,140",59.40%
-9,El Dorado,Governor,Gavin Newsom,1,Democratic,"36,297",40.60%
-10,Fresno,Governor,John H. Cox,3,Republican,"128,974",50.90%
-10,Fresno,Governor,Gavin Newsom,1,Democratic,"124,332",49.10%
-11,Glenn,Governor,John H. Cox,3,Republican,"5,908",70.90%
-11,Glenn,Governor,Gavin Newsom,1,Democratic,"2,424",29.10%
-12,Humboldt,Governor,John H. Cox,3,Republican,"18,418",35.50%
-12,Humboldt,Governor,Gavin Newsom,1,Democratic,"33,455",64.50%
-13,Imperial,Governor,John H. Cox,3,Republican,"12,785",38.30%
-13,Imperial,Governor,Gavin Newsom,1,Democratic,"20,573",61.70%
-14,Inyo,Governor,John H. Cox,3,Republican,"4,018",55.30%
-14,Inyo,Governor,Gavin Newsom,1,Democratic,"3,244",44.70%
-15,Kern,Governor,John H. Cox,3,Republican,"119,870",58.90%
-15,Kern,Governor,Gavin Newsom,1,Democratic,"83,507",41.10%
-16,Kings,Governor,John H. Cox,3,Republican,"17,976",59.40%
-16,Kings,Governor,Gavin Newsom,1,Democratic,"12,275",40.60%
-17,Lake,Governor,John H. Cox,3,Republican,"10,280",48.60%
-17,Lake,Governor,Gavin Newsom,1,Democratic,"10,869",51.40%
-18,Lassen,Governor,John H. Cox,3,Republican,"6,973",77.30%
-18,Lassen,Governor,Gavin Newsom,1,Democratic,"2,043",22.70%
-19,Los Angeles,Governor,John H. Cox,3,Republican,"826,402",28.10%
-19,Los Angeles,Governor,Gavin Newsom,1,Democratic,"2,114,699",71.90%
-20,Madera,Governor,John H. Cox,3,Republican,"23,488",61.00%
-20,Madera,Governor,Gavin Newsom,1,Democratic,"15,037",39.00%
-21,Marin,Governor,John H. Cox,3,Republican,"26,750",20.50%
-21,Marin,Governor,Gavin Newsom,1,Democratic,"103,671",79.50%
-22,Mariposa,Governor,John H. Cox,3,Republican,"5,043",61.30%
-22,Mariposa,Governor,Gavin Newsom,1,Democratic,"3,183",38.70%
-23,Mendocino,Governor,John H. Cox,3,Republican,"11,255",33.70%
-23,Mendocino,Governor,Gavin Newsom,1,Democratic,"22,152",66.30%
-24,Merced,Governor,John H. Cox,3,Republican,"28,424",48.00%
-24,Merced,Governor,Gavin Newsom,1,Democratic,"30,783",52.00%
-25,Modoc,Governor,John H. Cox,3,Republican,"2,628",76.20%
-25,Modoc,Governor,Gavin Newsom,1,Democratic,820,23.80%
-26,Mono,Governor,John H. Cox,3,Republican,"2,147",44.20%
-26,Mono,Governor,Gavin Newsom,1,Democratic,"2,706",55.80%
-27,Monterey,Governor,John H. Cox,3,Republican,"39,516",34.00%
-27,Monterey,Governor,Gavin Newsom,1,Democratic,"76,648",66.00%
-28,Napa,Governor,John H. Cox,3,Republican,"19,834",35.20%
-28,Napa,Governor,Gavin Newsom,1,Democratic,"36,513",64.80%
-29,Nevada,Governor,John H. Cox,3,Republican,"24,882",47.10%
-29,Nevada,Governor,Gavin Newsom,1,Democratic,"27,985",52.90%
-30,Orange,Governor,John H. Cox,3,Republican,"539,951",49.90%
-30,Orange,Governor,Gavin Newsom,1,Democratic,"543,047",50.10%
-31,Placer,Governor,John H. Cox,3,Republican,"103,157",58.80%
-31,Placer,Governor,Gavin Newsom,1,Democratic,"72,270",41.20%
-32,Plumas,Governor,John H. Cox,3,Republican,"5,807",62.80%
-32,Plumas,Governor,Gavin Newsom,1,Democratic,"3,433",37.20%
-33,Riverside,Governor,John H. Cox,3,Republican,"322,243",50.20%
-33,Riverside,Governor,Gavin Newsom,1,Democratic,"319,845",49.80%
-34,Sacramento,Governor,John H. Cox,3,Republican,"212,010",41.20%
-34,Sacramento,Governor,Gavin Newsom,1,Democratic,"302,696",58.80%
-35,San Benito,Governor,John H. Cox,3,Republican,"8,815",43.90%
-35,San Benito,Governor,Gavin Newsom,1,Democratic,"11,274",56.10%
-36,San Bernardino,Governor,John H. Cox,3,Republican,"260,379",48.50%
-36,San Bernardino,Governor,Gavin Newsom,1,Democratic,"276,874",51.50%
-37,San Diego,Governor,John H. Cox,3,Republican,"499,532",43.10%
-37,San Diego,Governor,Gavin Newsom,1,Democratic,"658,346",56.90%
-38,San Francisco,Governor,John H. Cox,3,Republican,"49,181",13.60%
-38,San Francisco,Governor,Gavin Newsom,1,Democratic,"312,181",86.40%
-39,San Joaquin,Governor,John H. Cox,3,Republican,"92,966",47.80%
-39,San Joaquin,Governor,Gavin Newsom,1,Democratic,"101,474",52.20%
-40,San Luis Obispo,Governor,John H. Cox,3,Republican,"61,137",48.40%
-40,San Luis Obispo,Governor,Gavin Newsom,1,Democratic,"65,117",51.60%
-41,San Mateo,Governor,John H. Cox,3,Republican,"70,242",24.80%
-41,San Mateo,Governor,Gavin Newsom,1,Democratic,"213,282",75.20%
-42,Santa Barbara,Governor,John H. Cox,3,Republican,"61,300",39.50%
-42,Santa Barbara,Governor,Gavin Newsom,1,Democratic,"93,841",60.50%
-43,Santa Clara,Governor,John H. Cox,3,Republican,"175,791",28.60%
-43,Santa Clara,Governor,Gavin Newsom,1,Democratic,"438,758",71.40%
-44,Santa Cruz,Governor,John H. Cox,3,Republican,"27,665",23.20%
-44,Santa Cruz,Governor,Gavin Newsom,1,Democratic,"91,523",76.80%
-45,Shasta,Governor,John H. Cox,3,Republican,"49,825",71.10%
-45,Shasta,Governor,Gavin Newsom,1,Democratic,"20,256",28.90%
-46,Sierra,Governor,John H. Cox,3,Republican,"1,068",64.10%
-46,Sierra,Governor,Gavin Newsom,1,Democratic,599,35.90%
-47,Siskiyou,Governor,John H. Cox,3,Republican,"10,946",60.30%
-47,Siskiyou,Governor,Gavin Newsom,1,Democratic,"7,218",39.70%
-48,Solano,Governor,John H. Cox,3,Republican,"56,627",38.70%
-48,Solano,Governor,Gavin Newsom,1,Democratic,"89,694",61.30%
-49,Sonoma,Governor,John H. Cox,3,Republican,"58,338",27.70%
-49,Sonoma,Governor,Gavin Newsom,1,Democratic,"152,040",72.30%
-50,Stanislaus,Governor,John H. Cox,3,Republican,"79,751",50.80%
-50,Stanislaus,Governor,Gavin Newsom,1,Democratic,"77,220",49.20%
-51,Sutter,Governor,John H. Cox,3,Republican,"18,953",63.00%
-51,Sutter,Governor,Gavin Newsom,1,Democratic,"11,122",37.00%
-52,Tehama,Governor,John H. Cox,3,Republican,"15,137",72.50%
-52,Tehama,Governor,Gavin Newsom,1,Democratic,"5,756",27.50%
-53,Trinity,Governor,John H. Cox,3,Republican,"3,075",57.70%
-53,Trinity,Governor,Gavin Newsom,1,Democratic,"2,250",42.30%
-54,Tulare,Governor,John H. Cox,3,Republican,"57,012",57.20%
-54,Tulare,Governor,Gavin Newsom,1,Democratic,"42,702",42.80%
-55,Tuolumne,Governor,John H. Cox,3,Republican,"14,580",61.10%
-55,Tuolumne,Governor,Gavin Newsom,1,Democratic,"9,294",38.90%
-56,Ventura,Governor,John H. Cox,3,Republican,"137,393",44.40%
-56,Ventura,Governor,Gavin Newsom,1,Democratic,"171,729",55.60%
-57,Yolo,Governor,John H. Cox,3,Republican,"23,611",32.20%
-57,Yolo,Governor,Gavin Newsom,1,Democratic,"49,759",67.80%
-58,Yuba,Governor,John H. Cox,3,Republican,"12,293",64.00%
-58,Yuba,Governor,Gavin Newsom,1,Democratic,"6,903",36.00%
-59,State Totals,Governor,John H. Cox,3,Republican,"4,742,825",38.10%
-59,State Totals,Governor,Gavin Newsom,1,Democratic,"7,721,410",61.90%
+COUNTY_NAME,PARTY_NAME,VOTE_TOTAL,D_PERCENT
+Alameda,Republican,"111,677",19.40%
+Alameda,Democratic,"462,558",80.60%
+Alpine,Republican,229,37.20%
+Alpine,Democratic,386,62.80%
+Amador,Republican,"11,356",64.50%
+Amador,Democratic,"6,237",35.50%
+Butte,Republican,"47,226",53.20%
+Butte,Democratic,"41,500",46.80%
+Calaveras,Republican,"13,845",64.10%
+Calaveras,Democratic,"7,765",35.90%
+Colusa,Republican,"3,764",65.30%
+Colusa,Democratic,"1,999",34.70%
+Contra Costa,Republican,"132,345",31.80%
+Contra Costa,Democratic,"283,805",68.20%
+Del Norte,Republican,"4,887",58.70%
+Del Norte,Democratic,"3,441",41.30%
+El Dorado,Republican,"53,140",59.40%
+El Dorado,Democratic,"36,297",40.60%
+Fresno,Republican,"128,974",50.90%
+Fresno,Democratic,"124,332",49.10%
+Glenn,Republican,"5,908",70.90%
+Glenn,Democratic,"2,424",29.10%
+Humboldt,Republican,"18,418",35.50%
+Humboldt,Democratic,"33,455",64.50%
+Imperial,Republican,"12,785",38.30%
+Imperial,Democratic,"20,573",61.70%
+Inyo,Republican,"4,018",55.30%
+Inyo,Democratic,"3,244",44.70%
+Kern,Republican,"119,870",58.90%
+Kern,Democratic,"83,507",41.10%
+Kings,Republican,"17,976",59.40%
+Kings,Democratic,"12,275",40.60%
+Lake,Republican,"10,280",48.60%
+Lake,Democratic,"10,869",51.40%
+Lassen,Republican,"6,973",77.30%
+Lassen,Democratic,"2,043",22.70%
+Los Angeles,Republican,"826,402",28.10%
+Los Angeles,Democratic,"2,114,699",71.90%
+Madera,Republican,"23,488",61.00%
+Madera,Democratic,"15,037",39.00%
+Marin,Republican,"26,750",20.50%
+Marin,Democratic,"103,671",79.50%
+Mariposa,Republican,"5,043",61.30%
+Mariposa,Democratic,"3,183",38.70%
+Mendocino,Republican,"11,255",33.70%
+Mendocino,Democratic,"22,152",66.30%
+Merced,Republican,"28,424",48.00%
+Merced,Democratic,"30,783",52.00%
+Modoc,Republican,"2,628",76.20%
+Modoc,Democratic,820,23.80%
+Mono,Republican,"2,147",44.20%
+Mono,Democratic,"2,706",55.80%
+Monterey,Republican,"39,516",34.00%
+Monterey,Democratic,"76,648",66.00%
+Napa,Republican,"19,834",35.20%
+Napa,Democratic,"36,513",64.80%
+Nevada,Republican,"24,882",47.10%
+Nevada,Democratic,"27,985",52.90%
+Orange,Republican,"539,951",49.90%
+Orange,Democratic,"543,047",50.10%
+Placer,Republican,"103,157",58.80%
+Placer,Democratic,"72,270",41.20%
+Plumas,Republican,"5,807",62.80%
+Plumas,Democratic,"3,433",37.20%
+Riverside,Republican,"322,243",50.20%
+Riverside,Democratic,"319,845",49.80%
+Sacramento,Republican,"212,010",41.20%
+Sacramento,Democratic,"302,696",58.80%
+San Benito,Republican,"8,815",43.90%
+San Benito,Democratic,"11,274",56.10%
+San Bernardino,Republican,"260,379",48.50%
+San Bernardino,Democratic,"276,874",51.50%
+San Diego,Republican,"499,532",43.10%
+San Diego,Democratic,"658,346",56.90%
+San Francisco,Republican,"49,181",13.60%
+San Francisco,Democratic,"312,181",86.40%
+San Joaquin,Republican,"92,966",47.80%
+San Joaquin,Democratic,"101,474",52.20%
+San Luis Obispo,Republican,"61,137",48.40%
+San Luis Obispo,Democratic,"65,117",51.60%
+San Mateo,Republican,"70,242",24.80%
+San Mateo,Democratic,"213,282",75.20%
+Santa Barbara,Republican,"61,300",39.50%
+Santa Barbara,Democratic,"93,841",60.50%
+Santa Clara,Republican,"175,791",28.60%
+Santa Clara,Democratic,"438,758",71.40%
+Santa Cruz,Republican,"27,665",23.20%
+Santa Cruz,Democratic,"91,523",76.80%
+Shasta,Republican,"49,825",71.10%
+Shasta,Democratic,"20,256",28.90%
+Sierra,Republican,"1,068",64.10%
+Sierra,Democratic,599,35.90%
+Siskiyou,Republican,"10,946",60.30%
+Siskiyou,Democratic,"7,218",39.70%
+Solano,Republican,"56,627",38.70%
+Solano,Democratic,"89,694",61.30%
+Sonoma,Republican,"58,338",27.70%
+Sonoma,Democratic,"152,040",72.30%
+Stanislaus,Republican,"79,751",50.80%
+Stanislaus,Democratic,"77,220",49.20%
+Sutter,Republican,"18,953",63.00%
+Sutter,Democratic,"11,122",37.00%
+Tehama,Republican,"15,137",72.50%
+Tehama,Democratic,"5,756",27.50%
+Trinity,Republican,"3,075",57.70%
+Trinity,Democratic,"2,250",42.30%
+Tulare,Republican,"57,012",57.20%
+Tulare,Democratic,"42,702",42.80%
+Tuolumne,Republican,"14,580",61.10%
+Tuolumne,Democratic,"9,294",38.90%
+Ventura,Republican,"137,393",44.40%
+Ventura,Democratic,"171,729",55.60%
+Yolo,Republican,"23,611",32.20%
+Yolo,Democratic,"49,759",67.80%
+Yuba,Republican,"12,293",64.00%
+Yuba,Democratic,"6,903",36.00%
+State Totals,Republican,"4,742,825",38.10%
+State Totals,Democratic,"7,721,410",61.90%
