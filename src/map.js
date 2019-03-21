@@ -29,14 +29,9 @@ let svg = d3.select("#container")
 let mainG = svg.append("g")
 
 let linkG = svg.append("g")
-    .attr("transform", "translate(800 0)")
+    .attr("transform", "translate(800 10)")
     .attr("class", "noPointerEvents")
-  .append("rect")
-    .attr("width", 600)
-    .attr("height", 500)
-    .attr("x", 10)
-    .attr("y", 10)
-    .attr("fill", "gold")
+ 
 
 console.log(mainG)
 
@@ -121,6 +116,96 @@ let gasMax = d3.max(mapData.features, function(d) { return d.properties.gasPerPo
 gasConsumptionScale.domain(d3.extent(mapData.features, function(d) { return d.properties.gasPerPop; }))
 populationScale.domain(d3.extent(mapData.features, function(d) { return d.properties.population }))
 
+// Calculate scales of the 2nd visualization (bar graph)
+let xScale = d3.scaleBand()
+      .range([0, w-80])
+      .domain(mapData.features.map((s) => s.properties.NAME))
+      .padding(0.2)
+    
+let yScale = d3.scaleLinear()
+      .range([h-100, 10])
+      .domain(d3.extent(mapData.features, function(d) { return d.properties.gasPerPop; }));
+
+linkG.append('g')
+      .attr('transform', `translate(0, ${h-100})`)
+      .call(d3.axisBottom(xScale))
+      .selectAll("text")
+        .attr("y", 0)
+        .attr("x", 9)
+        .attr("dy", ".35em")
+        .attr("transform", "rotate(90)")
+        .style("text-anchor", "start");
+
+linkG.append('g')
+      .call(d3.axisLeft(yScale));
+
+linkG.append('g')
+      .attr('class', 'grid')
+      .call(d3.axisLeft()
+        .scale(yScale)
+        .tickSize(-w+80, 0, 0)
+        .tickFormat('')
+      )
+
+linkG.append('text')
+  .attr('class', 'label')
+  .attr('x', -(h/ 2) + 20)
+  .attr('y', -50)
+  .attr('transform', 'rotate(-90)')
+  .attr('text-anchor', 'middle')
+  .text('Gas Consumption per Person (Therms)')
+
+let barGroups = linkG.selectAll()
+  .data(mapData.features)
+  .enter()
+  .append('g')
+
+let clicked = []
+
+barGroups
+  .append('rect')
+  .attr('class', 'bar')
+  .attr('x', (g) => xScale(g.properties.NAME))
+  .attr('y', (g) => yScale(g.properties.gasPerPop))
+  .attr('height', (g) => h- yScale(g.properties.gasPerPop) - 100)
+  .attr('width', xScale.bandwidth())
+  //.attr("fill", function(d) { return "rgba(0,100,255," + (d.properties.population/5000000 + 0.3) + ")" })
+  .attr("fill", function(d) { 
+    if(d.properties.yesCount > d.properties.noCount) { return ("rgba(0,100,0," + (1.0-d.properties.noCount/d.properties.yesCount + 0.4) + ")") } 
+    else { return ("rgba(238,238,0," + (1.0-d.properties.yesCount/d.properties.noCount + 0.4) + ")") }
+  })
+  .on("click", function(d) {
+    d3.select(this)
+      .attr("stroke", "red")
+    if(clicked.length == 0) {
+      clicked.push(d.properties.NAME) 
+    }
+    else if(clicked.includes(d.properties.NAME)) {
+      clicked.splice(clicked.indexOf(d.properties.NAME), 1);
+      d3.select(this).attr("stroke", "none");
+    }
+    else {
+      clicked.push(d.properties.NAME);
+    }
+    mainG.selectAll("path").transition().duration(500).style("fill", function(d2) {
+      for(let i = 0; i < clicked.length; i++) {
+        if(clicked[i] == d2.properties.NAME) {
+          console.log(d2.properties.NAME)
+          return gasConsumptionScale(d2.properties.gasPerPop);
+        }
+      }
+      return '#ccc';
+    })
+  })
+  .on("mouseover", function() {
+    d3.select(this)
+      .attr("x", (g)=>xScale(g.properties.NAME)-1)
+      .attr("width", xScale.bandwidth()+2) 
+  })
+  .on("mouseout", function() {
+    d3.select(this).attr("width", xScale.bandwidth())
+  })
+
 // Create the legend for the gas consumption scale.
 let gasLegendDomain = new Array() 
 let increment = (gasMax - gasMin)/5;
@@ -154,6 +239,36 @@ let mainMap = mainG.selectAll("path")
   .append("path")
     .attr("d", path)
     .style("fill", "#CCC")
+    .on("click", function(d) {
+      if(clicked.length == 0) {
+        clicked.push(d.properties.NAME) 
+      }
+      else if(clicked.includes(d.properties.NAME)) {
+        clicked.splice(clicked.indexOf(d.properties.NAME), 1);
+        //d3.select(this).attr("stroke", "none");
+      }
+      else {
+        clicked.push(d.properties.NAME);
+      }
+      mainG.selectAll("path").transition().duration(500).style("fill", function(d2) {
+        for(let i = 0; i < clicked.length; i++) {
+          if(clicked[i] == d2.properties.NAME) {
+            console.log(d2.properties.NAME)
+            return gasConsumptionScale(d2.properties.gasPerPop);
+          }
+        }
+        return '#ccc';
+      }) 
+      linkG.selectAll(".bar")
+        .attr("stroke", function(d2) {
+          for(let i = 0; i < clicked.length; i++) {
+            if(clicked[i] == d2.properties.NAME) {
+              return "red"
+            }
+          }
+          return "none"
+        })
+    })
     .on("mouseover", function(d){
       var xPosition = w/2 + 150;
       var yPosition = h/2;
@@ -225,6 +340,7 @@ controls.select("#spawnCircles").on("click", function() {
   d3.select(this).select("rect").style("fill", "#aec6cf")
 })
 
+// Enables the Gas Consumption Visualization on map. 
 controls.select("#setGasViz").on("click", function() {
   mainMap.transition().duration(1000)
     .style("fill", function(d) {
@@ -238,6 +354,8 @@ controls.select("#setGasViz").on("click", function() {
       return "#CCC";
     }
   })
+  clicked = [];
+  linkG.selectAll("rect").attr("stroke", "none")
 })
 .on("mouseover", function() {
   d3.select(this).select("rect").style("fill", "#bcdae5")
@@ -249,6 +367,7 @@ controls.select("#setGasViz").on("click", function() {
 // Fire the click event to initalize Gas Visualization
 eventFire(document.getElementById('setGasViz'), 'click');
 
+// Enables the Political Party Visualization on map.
 controls.select("#setPartyViz").on("click", function() {
   mainMap.transition().duration(1000)
     .style("fill", function(d) {
@@ -266,6 +385,8 @@ controls.select("#setPartyViz").on("click", function() {
         return "#CCC"
       }
     })
+  clicked = [];
+  linkG.selectAll("rect").attr("stroke", "none")
 })
 .on("mouseover", function() {
   d3.select(this).select("rect").style("fill", "#bcdae5")
